@@ -1,0 +1,147 @@
+/* 
+PrimariColor: #689f38;
+LightColor: #99d066;
+DarkColor: #387002; 
+*/
+
+/*Buttons*/
+a:active {
+    transition-duration: 2s;
+}
+
+/*Navbar*/
+.navbar {
+    display: inline;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    opacity: 0.8;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav li a:hover {
+    color: #689f38 !important;
+}
+.navbar-header a {
+    color: #689f38 !important;
+}
+.navbar-header p {
+    letter-spacing: 3px !important;
+    vertical-align: middle;
+}
+@media only screen and (max-width: 380px) {
+    /* For mobile phones: */
+    .navbar-header p {
+    letter-spacing: 1px !important;
+    vertical-align: middle;
+}
+}
+.navbar-header a:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+
+/*Center button*/
+.center-button {
+    border: 2px solid #689f38;
+    border-radius: 8px;
+    opacity: 0.7;
+    height: 80px;
+    position: absolute;
+    background-color: #689f38;
+    right: 30%;
+    bottom: 45%;
+    left: 30%;
+    z-index: 10;
+    color: #689f38;
+    text-align: center;
+    
+}
+.center-button:hover {
+	opacity: 0.9;
+}
+.center-button a {
+    color: white !important;
+    text-decoration: none;
+    opacity: 0.9 !important;
+    font-size: 20px !important;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 380px) {
+    /* For mobile phones: */
+    .center-button a {
+        font-size: 18px !important;
+    }
+}
+
+/*Carousel*/
+.carousel-inner {
+    border-top: 1px solid #99d066 !important;
+}
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    .carousel-indicators {
+        margin-bottom: 5% !important;
+    }
+}
+
+.content {
+    width: 70%;
+}
+
+/*Contact*/
+.glyphicon {
+    /* color: #387002; */
+    color: #689f38;
+}
+#email {
+    width: 250px;
+}
+.text-center {
+    letter-spacing: 5px;
+    text-decoration-color: #689f38;
+    color: #99d066;
+}
+.btn-send .btn-send:visited{
+    letter-spacing: 1px;
+    border: 1px solid #99d066 !important;
+    color: #387002;
+}
+.btn-send:hover {
+    background-color: #689f38 !important;
+    color: white !important;
+    
+}
+.alerting {
+	margin-top: 10px;
+}
+
+/*Full screen*/
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Scrolling*/
+
+a[ id= "contact" ]:target ~ #main article.panel {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+}
+
+a[ id= "googleMap" ]:target ~ #main article.panel {
+    -webkit-transform: translateY( -500px );
+    transform: translateY( -500px );
+}
+a[ id= "googleMap" ]:target ~ #main article.panel {
+    -webkit-transform: translateY( -1000px );
+    transform: translateY( -1000px );
+}
