@@ -11,7 +11,7 @@ const config = require('config');
 const logger = require('./helpers/logger');
 
 // Import routes
-const index = require('./routes/index');
+const main = require('./routes/main');
 const es6Renderer = require('express-es6-template-engine');
 
 // Create app
@@ -39,8 +39,8 @@ app.use(express.static(join(__dirname, 'public')));
 
 // Routes setup for app
 app.use(middelware.response);
-app.use('/index', index);
-app.use('/', (req, res) => res.redirect('/index'));
+app.use('/main', main);
+app.use('/', (req, res) => res.redirect('/main'));
 app.use(middelware.error);
 
 // Migrate database and run application or exit with error

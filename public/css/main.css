@@ -12,14 +12,21 @@ a:active {
 /*Navbar*/
 .navbar {
     display: inline;
-    padding-top: 15px;
-    padding-bottom: 15px;
     border: 0;
     opacity: 0.8;
     border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 5px;
+}
+.navbar-brand {
+    padding: 0 !important;
+    display: flex;
+}
+.navbar-brand  img {
+    height: 100% !important;
+}
+.navbar-brand  p {
+    padding: 15px !important;
 }
 .navbar-nav li a:hover {
     color: #689f38 !important;
