@@ -103,6 +103,21 @@ a:active {
     width: 70%;
 }
 
+.heading {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 992px) {
+    .side-picture {
+        padding-top: 10%;
+    }
+}
+
+.side-picture img {
+    width: 100%;
+}
+
 /*Contact*/
 .glyphicon {
     /* color: #387002; */
@@ -142,13 +157,4 @@ a:active {
 a[ id= "contact" ]:target ~ #main article.panel {
     -webkit-transform: translateY( 0px);
     transform: translateY( 0px );
-}
-
-a[ id= "googleMap" ]:target ~ #main article.panel {
-    -webkit-transform: translateY( -500px );
-    transform: translateY( -500px );
-}
-a[ id= "googleMap" ]:target ~ #main article.panel {
-    -webkit-transform: translateY( -1000px );
-    transform: translateY( -1000px );
 }
