@@ -39,8 +39,8 @@ app.use(express.static(join(__dirname, 'public')));
 
 // Routes setup for app
 app.use(middelware.response);
-app.use('/main', main);
-app.use('/', (req, res) => res.redirect('/main'));
+app.use('/', main);
+// app.use('/', (req, res) => res.redirect('/main'));
 app.use(middelware.error);
 
 // Migrate database and run application or exit with error
