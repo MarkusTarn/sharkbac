@@ -41,9 +41,9 @@ a:active {
 @media only screen and (max-width: 380px) {
     /* For mobile phones: */
     .navbar-header p {
-    letter-spacing: 1px !important;
-    vertical-align: middle;
-}
+        letter-spacing: 1px !important;
+        vertical-align: middle;
+    }
 }
 .navbar-header a:hover {
     text-decoration: none;
@@ -98,29 +98,24 @@ a:active {
         margin-bottom: 5% !important;
     }
 }
-
 .content {
     width: 70%;
 }
-
 .heading {
     margin-top: 100px;
     margin-bottom: 50px;
 }
-
 @media only screen and (min-width: 992px) {
     .side-picture {
         padding-top: 10%;
     }
 }
-
 .side-picture img {
     width: 100%;
 }
 
 /*Contact*/
 .glyphicon {
-    /* color: #387002; */
     color: #689f38;
 }
 #email {
@@ -153,7 +148,6 @@ a:active {
 }
 
 /*Scrolling*/
-
 a[ id= "contact" ]:target ~ #main article.panel {
     -webkit-transform: translateY( 0px);
     transform: translateY( 0px );
