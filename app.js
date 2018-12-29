@@ -1,14 +1,15 @@
 // Import dependencies
-import i18n from 'i18n';
 import express from 'express';
 import { join } from 'path';
 import favicon from 'serve-favicon';
+import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import { json, urlencoded } from 'body-parser';
 import middelware from './helpers/middleware';
 
 const config = require('config');
 const logger = require('./helpers/logger');
+const i18n = require('./helpers/i18n');
 
 // Import routes
 const main = require('./routes/main');
@@ -22,25 +23,23 @@ app.engine('html', es6Renderer);
 app.set('views', join(__dirname, 'views'));
 app.set('view engine', 'html');
 
-// Set locale
-i18n.configure({
-	locales: config.get('locale.locales'),
-	cookie: config.get('locale.cookie'),
-	directory: join(__dirname, config.get('locale.path')),
-});
-
 // Dependencies setup for app
 app.use(favicon(join(__dirname, 'public', 'favicon.png')));
 app.use(json());
 app.use(urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(session({
+	secret: 'localeCookie',
+	resave: true,
+	saveUninitialized: true,
+	cookie: { maxAge: 60000 },
+}));
 app.use(i18n.init);
 app.use(express.static(join(__dirname, 'public')));
 
 // Routes setup for app
 app.use(middelware.response);
 app.use('/', main);
-// app.use('/', (req, res) => res.redirect('/main'));
 app.use(middelware.error);
 
 // Migrate database and run application or exit with error
