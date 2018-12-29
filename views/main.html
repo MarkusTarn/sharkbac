@@ -6,6 +6,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -47,7 +48,7 @@
     <!-- Carousel -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
-  		<ol class="carousel-indicators">
+  		<!-- <ol class="carousel-indicators">
     		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     		<li data-target="#myCarousel" data-slide-to="1"></li>
     		<li data-target="#myCarousel" data-slide-to="2"></li>
@@ -58,7 +59,7 @@
     		<li data-target="#myCarousel" data-slide-to="7"></li>
     		<li data-target="#myCarousel" data-slide-to="8"></li>
     		<li data-target="#myCarousel" data-slide-to="9"></li>
-  		</ol>
+  		</ol> -->
   		
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
@@ -142,11 +143,12 @@
               </div>
             </div>
 
-            <!-- Center button -->
-            <div id="centerButton" class="center-button" >
-                <a class="toscroll" href="#contact">Contact us!</a>
-            </div>
-            
+            <!-- Center button (Read more)-->
+            <a id="centerButton" class="center-button toscroll" href="#technology">
+              LEARN MORE
+              <br>↓
+            </a>
+                       
               <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
@@ -164,23 +166,7 @@
       <div class="col-md-6">
           <h2 class="text-center heading">${locale.__('menu_technology')}</h2>
           <p>
-            We provide in situ, on site and disposal related soil and water remediation alternatives achieved by aerobic and anaerobic bacterial agents.
-            In addition numerous industrial process and waste disinfection, leaching or enriching possibilities emerge from offered technology.<br>
-            <br>
-            Our bacterial agents can be used for:<br>
-            
-            Oil spill remediation from soil and from fresh as well as sea water. Particularly high salination levels (up to 200 g of various salts /1 l of water) and extreme temperatures from -5°C to 70°C comply. 
-            Sanitary processing of roadsides of automobile and railway lines, adjacent territories of gas stations and car washes, territories of airports, military bases and industrial enterprises from oil pollution from fuels and lubricants; 
-            Sanitization of oil production and storage facilities;
-            Disinfection of industrial tanks, tankers and natural reservoirs from oil and oil products;
-            Disposal of chemical industry wastes (aromatic, polyaromatic, cyclic, unsaturated, isoprene carbohydrates) and toxic pollution
-            Disinfection of organic component of household waste.
-            <br><br>
-            In addition, our agents:
-            Are active at high concentrations of chemical pollution of the environment;
-            Act directly in the layer of oil and oil products.
-            <br><br>
-            We develop products and methods for the purification of water, soils, and containers from various types of contamination according to the requirements of the customer.
+            ${locale.__('section_technology')}
           </p>
           <br>
       </div>
@@ -194,19 +180,7 @@
       <div class="col-md-6 pull-right">
         <h2 class="text-center heading">${locale.__('menu_about')}</h2>
         <p>
-          Sharkbac is an international consultancy group with vast experience in life sciences on waste related matters. PhD personnell in microbiology and applied physics as well as enterprenual experience introducing pioneering technologies on recycling trivia are present for the toughest challenges.	 
-          Sharkbac  Ltd. is engaged in microbiology and specializes in solving environmental issues in the treatment of water and soil from oil and petrochemical pollution, arsenic contamination, phenols, the recultivation of contaminated land and the restoration of environmentally friendly soil fertility.
-          A number of highly effective bacterial bioagents to be used depending on the actual problem set have been developed out and scientific approach is taken on every challenge in order to find the best solution.
-          <br><br>
-          Among others we clean water and soil effectively (by 90-98%) and in a short time (2-3 weeks) utilizing simple linear, aromatic, polyaromatic, cyclic, unsaturated, isoprene carbohydrates of oil, as well as crude oil, gasoline, diesel fuel, fuel oil, kerosene at temperatures up to + 70°C, and the inclusion of particular the soil bacteria in the association contributes to the process of bioremediation (fertility restoration) of the infected areas.
-          After cleaning another set of agents will be used what was developed and has found practical application for the recultivation of contaminated pathogenic microflora and microbiota lands, the restoration of soil biological fertility, environmental bioremediation, and increased mobility of soil nutrients in soil (nitrogen, phosphorus, potassium), accumulation of biohumus, and suppression of soil nutrients pathogenic microflora.
-          Particularly noteworthy is our development of cleaning soils contaminated with arsenic compounds and polyphenols. This technology allows not only to bind these substances in the form of complexes, but also to remove them from the soil and isolate them in pure form for later use. A JV has been established in Finland to clean up the former territories of wood processing enterprises.
-          <br><br>
-          Our integrated technology for the purification of deaerators and process tanks from complex mineral-organic sediment on the off-coast oil production platform of European leading oil drilling companies proved to be very effective. Patents are pending.
-          <br><br>
-          Sharkbac Ltd. provides services of highly qualified personnel to assess the extent of contamination of the territory and suggest effective cleaning solutions using our own high-tech equipment and professional laboratory for analysis processing.
-          <br><br>
-          Last but not the least, slightly off focus though yet good to know that we have developed a group of probiotic agents containing live saprophytic cultures of useful probiotic bacteria, which allow normalizing the general metabolism, increasing nonspecific resistance (immunity) and functional activity of the gastrointestinal tract. Bacteria are involved in the biosynthesis of individual vitamins; in addition, they are able to accumulate a large amount of toxic compounds and facilitate their removal from the human body and farm animals.
+          ${locale.__('section_about')}
         </p>
         <br>
       </div>

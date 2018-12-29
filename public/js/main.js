@@ -26,6 +26,7 @@ $(() => {
 		interval: 6000,
 		pause: 'false',
 	});
+
 	$('a.toscroll').on('click', (e) => {
 		const url = e.target.href;
 		const hash = url.substring(url.indexOf('#') + 1);
