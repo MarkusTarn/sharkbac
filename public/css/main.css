@@ -1,7 +1,7 @@
-/* 
+/*
 PrimariColor: #689f38;
 LightColor: #99d066;
-DarkColor: #387002; 
+DarkColor: #387002;
 */
 
 /*Buttons*/
@@ -130,6 +130,7 @@ a:active {
 /* Content sections */
 .content {
     width: 70%;
+    margin-top: 60px;
 }
 .heading {
     margin-top: 100px;
@@ -167,7 +168,7 @@ a:active {
 .btn-send:hover {
     background-color: #689f38 !important;
     color: white !important;
-    
+
 }
 .alerting {
 	margin-top: 10px;
