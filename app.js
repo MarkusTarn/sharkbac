@@ -4,7 +4,7 @@ import { join } from 'path';
 import favicon from 'serve-favicon';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
-import { json, urlencoded } from 'body-parser';
+import { urlencoded } from 'body-parser';
 import middelware from './helpers/middleware';
 
 const config = require('config');
@@ -13,6 +13,7 @@ const i18n = require('./helpers/i18n');
 
 // Import routes
 const main = require('./routes/main');
+const mail = require('./routes/mail');
 const es6Renderer = require('express-es6-template-engine');
 
 // Create app
@@ -25,7 +26,6 @@ app.set('view engine', 'html');
 
 // Dependencies setup for app
 app.use(favicon(join(__dirname, 'public', 'favicon.png')));
-app.use(json());
 app.use(urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(session({
@@ -40,9 +40,10 @@ app.use(express.static(join(__dirname, 'public')));
 // Routes setup for app
 app.use(middelware.response);
 app.use('/', main);
+app.use('/mail', mail);
 app.use(middelware.error);
 
-// Migrate database and run application or exit with error
+// Start the service application
 const startMsg = `${process.env.npm_package_name} service started on port ${config.get('service.port') || 3000}.`;
 app.listen(config.get('service.port'), () => logger.log('info', startMsg));
 

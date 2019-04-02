@@ -39,11 +39,10 @@ $(() => {
 	// Contact-form
 	$('#contact-form').on('submit', (e) => {
 		if (!e.isDefaultPrevented()) {
-			const url = 'email url';
-
+			const url = '/mail';
 			const data = {
-				email: $('#email').val(),
-				message: $('#message').val(),
+				address: $('#email').val(),
+				subject: $('#message').val(),
 			};
 
 			$.ajax({

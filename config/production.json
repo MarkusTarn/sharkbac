@@ -3,6 +3,7 @@
       "host": "http://localhost",
       "port": "5000"
     },
+    "email": "markus.tarn@gmail.com",
     "locale": {
         "locales": ["en", "ru"],
         "cookie": "localeCookie",

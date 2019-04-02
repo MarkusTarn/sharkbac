@@ -43,9 +43,11 @@
     "section_contact_slogan": "Slogan",
     "section_contact_address": "Address",
     "section_contact_mobile": "Mobile",
-    "section_contact_email": "Email",
+    "section_contact_email": "info@sharkbac.com",
     "section_contact_facebook": "Facebook",
     "section_contact_placeholder_email": "Email",
     "section_contact_placeholder_message": "Message",
-    "section_contact_send": "Send"
+    "section_contact_send": "Send",
+    "section_contact_success": "Email was sent out successfully!",
+    "section_contact_fail": "Could not send out email, please send email out manually to info@sharkbac.com."
 }
