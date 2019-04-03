@@ -6,8 +6,8 @@ const config = require('config');
 const { exec } = require('child_process');
 
 router.post('/', [
-	check('address').isEmail().trim().escape(),
-	check('subject').trim().escape(),
+	// check('address').isEmail().trim().escape(),
+	// check('subject').trim().escape(),
 ], (req, res, next) => {
 	const to = config.get('email');
 	const { address } = req.body;

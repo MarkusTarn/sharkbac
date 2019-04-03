@@ -16,10 +16,10 @@ a:active {
     opacity: 0.8;
     border-radius: 0;
     font-size: 14px;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
 }
 .navbar-brand {
-    padding: 0 !important;
+    padding: 3px;
     display: flex;
 }
 .navbar-brand  img {
@@ -38,8 +38,7 @@ a:active {
     letter-spacing: 3px !important;
     vertical-align: middle;
 }
-@media only screen and (max-width: 380px) {
-    /* For mobile phones: */
+@media only screen and (max-width: 768px) {
     .navbar-header p {
         letter-spacing: 1px !important;
         vertical-align: middle;
@@ -50,14 +49,37 @@ a:active {
     cursor: default;
 }
 
-/*Center button*/
+/*Carousel*/
+.carousel-inner {
+    border-top: 1px solid #99d066 !important;
+}
+.carousel-caption {
+    margin-bottom: 12%;
+    background-color: rgba(255,255,255, 0.9);
+    border-radius: 8px;
+    color: #689f38;
+    text-shadow: 0 0;
+}
+.carousel-caption p {
+    color: #777;
+}
+.carousel-control .glyphicon {
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+    .carousel-indicators {
+        margin-bottom: 5% !important;
+    }
+    .carousel-caption {
+        margin-bottom: 30%;
+    }
+}
 .center-button {
     color: #689f38;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px !important;
     text-decoration: none;
     text-align: center;
-    opacity: 0.7;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -73,10 +95,15 @@ a:active {
 }
 .center-button:hover, .center-button:focus, .center-button:visited, .center-button:active {
     color: #689f38 !important;
-    opacity: 1 !important;
     text-decoration: none !important;
 }
-@media only screen and (max-width: 380px) {
+.center-button span {
+    box-shadow: -5px 150px 500px 233px rgba(255,255,255,0.8);
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+@media only screen and (max-width: 768px) {
     /* For mobile phones: */
     center-button {
         font-size: 18px !important;
@@ -111,59 +138,77 @@ a:active {
   }
 }
 
-/*Carousel*/
-.carousel-inner {
-    border-top: 1px solid #99d066 !important;
-}
-.carousel-caption {
-    margin-bottom: 25%;
-    background-color: rgba(0,0,0, 0.5);
-    border-radius: 8px;
-}
-@media only screen and (max-width: 500px) {
-    /* For mobile phones: */
-    .carousel-indicators {
-        margin-bottom: 5% !important;
-    }
-}
-
 /* Content sections */
 .content {
     width: 70%;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 .heading {
-    margin-top: 100px;
     margin-bottom: 50px;
+    letter-spacing: 5px;
+    text-decoration-color: #689f38;
+    color: #99d066;
+}
+@media only screen and (max-width: 768px) {
+    .side-picture img {
+        width: 100%;
+    }
+    .heading {
+        text-align: center;
+    }
+    .content {
+        width: 80%;
+        margin-top: 60px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .side-picture {
         padding-top: 10%;
     }
-}
-.side-picture img {
-    width: 100%;
+    .side-picture-left img {
+        transform: translate(0, -20%) scale(0.6);
+        position: absolute;
+        right: 0;
+    }
+    .side-picture-right img {
+        transform: translate(0, -30%) scale(0.6);
+        position: absolute;
+        left: 0;
+    }
 }
 
 /*Contact*/
-#contact {
-    width: 60%;
+@media only screen and (min-width: 992px) {
+    #contact {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #contact-form button {
+        margin-right: 5%;
+        width: 100px;
+    }
 }
 .glyphicon {
     color: #689f38;
 }
-#email {
-    width: 250px;
+.message-area {
+    width: 100%;
 }
-.text-center {
-    letter-spacing: 5px;
-    text-decoration-color: #689f38;
-    color: #99d066;
+#email, #message{
+    width: 100%;
+}
+#contact-form {
+    margin-bottom: 60px;
+}
+#contact-form button {
+    width: 100px;
 }
 .btn-send .btn-send:visited{
     letter-spacing: 1px;
     border: 1px solid #99d066 !important;
     color: #387002;
+    width: 100%;
 }
 .btn-send:hover {
     background-color: #689f38 !important;

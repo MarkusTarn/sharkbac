@@ -63,6 +63,7 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
+
             <div class="item active">
               <img src="img/1.jpg" alt="s1" style="image-orientation: from-image;">
               <div class="carousel-caption">
@@ -145,8 +146,7 @@
 
             <!-- Center button (Read more)-->
             <a id="centerButton" class="center-button toscroll" href="#technology">
-              LEARN MORE
-              <br>↓
+                LEARN MORE<br>↓<span id="shadow"></span>
             </a>
 
               <!-- Left and right controls -->
@@ -163,41 +163,45 @@
 
     <!-- Container (Technology Section) -->
     <div id="technology" class="container-fluid bg-grey content">
-      <div class="col-md-6">
-          <h2 class="text-center heading">${locale.__('menu_technology')}</h2>
-          <p>${locale.__('section_technology_paragraph_1')}</p>
-          <p>${locale.__('section_technology_paragraph_2')}</p>
-          <p>${locale.__('section_technology_paragraph_3')}</p>
-          <p>${locale.__('section_technology_paragraph_4')}</p>
-          <p>${locale.__('section_technology_paragraph_5')}</p>
-          <br>
-      </div>
-      <div class="col-md-6 side-picture">
-        <img src="img/tech.png" alt="">
-      </div>
+        <div class="row">
+            <div class="col-md-9">
+                <h2 class="heading">${locale.__('menu_technology')}</h2>
+                <p>${locale.__('section_technology_paragraph_1')}</p>
+                <p>${locale.__('section_technology_paragraph_2')}</p>
+                <p>${locale.__('section_technology_paragraph_3')}</p>
+                <p>${locale.__('section_technology_paragraph_4')}</p>
+                <p>${locale.__('section_technology_paragraph_5')}</p>
+                <br>
+            </div>
+            <div class="col-md-3 side-picture side-picture-right">
+                <img src="img/tech.png" alt="">
+            </div>
+        </div>
     </div>
 
     <!-- Container (About Section) -->
-    <div id="about" class="container-fluid bg-grey content d-flex align-items-center">
-      <div class="col-md-6 pull-right">
-        <h2 class="text-center heading">${locale.__('menu_about')}</h2>
-        <p>${locale.__('section_about_paragraph_1')}</p>
-        <p>${locale.__('section_about_paragraph_2')}</p>
-        <p>${locale.__('section_about_paragraph_3')}</p>
-        <p>${locale.__('section_about_paragraph_4')}</p>
-        <p>${locale.__('section_about_paragraph_5')}</p>
-        <br>
+    <div id="about" class="container-fluid bg-grey content">
+        <div class="row">
+          <div class="col-md-9 pull-right">
+            <h2 class="heading">${locale.__('menu_about')}</h2>
+            <p>${locale.__('section_about_paragraph_1')}</p>
+            <p>${locale.__('section_about_paragraph_2')}</p>
+            <p>${locale.__('section_about_paragraph_3')}</p>
+            <p>${locale.__('section_about_paragraph_4')}</p>
+            <p>${locale.__('section_about_paragraph_5')}</p>
+            <br>
+          </div>
+          <div class="col-md-3 side-picture side-picture-left pull-left">
+              <img src="img/about.png" alt="">
+          </div>
       </div>
-      <div class="col-md-6 side-picture pull-left">
-          <img src="img/about.png" alt="">
-        </div>
     </div>
 
     <!-- Container (Contact Section) -->
     <div id="contact" class="container-fluid bg-grey content d-flex align-items-center">
     	<div id="alerts" class="messages alerting"></div>
         <form id="contact-form">
-          <h2 class="text-center">${locale.__('menu_contact')}</h2>
+          <h2 class="text-center heading">${locale.__('menu_contact')}</h2>
           <div class="row">
             <div class="col-sm-5">
               <p>${locale.__('section_contact_slogan')}</p>
@@ -206,18 +210,18 @@
               <p><a href="mailto:mail?"><span class="glyphicon glyphicon-envelope"></span> ${locale.__('section_contact_email')}</a></p>
               <p><a href="https://facebook"><i class="glyphicon fa fa-facebook-official" aria-hidden="true"></i> ${locale.__('section_contact_facebook')}</a></p>
             </div>
-            <div class="col-sm-7 slideanim">
+            <div class="col-sm-7">
               <div class="row">
-                <div class="form-group pull-left">
+                  <div class="form-group col-sm-12 message-area pull-left">
+                    <textarea class="form-control" id="message" name="message" placeholder="${locale.__('section_contact_placeholder_message')}" rows="5" required></textarea><br>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-sm-9">
                   <input class="form-control" id="email" name="email" placeholder="${locale.__('section_contact_placeholder_email')}" type="email" required>
                 </div>
-              </div>
-              <div class="row">
-                  <textarea class="form-control" id="message" name="message" placeholder="${locale.__('section_contact_placeholder_message')}" rows="5" required></textarea><br>
-              </div>
-              <div class="row">
-                <div class="col-sm-12 form-group">
-                  <button class="btn btn-send btn-default pull-right"f type="submit">${locale.__('section_contact_send')}</button>
+                <div class="form-group col-sm-3 pull-right">
+                  <button class="btn btn-default btn-send pull-right"f type="submit">${locale.__('section_contact_send')}</button>
                 </div>
               </div>
             </div>

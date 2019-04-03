@@ -36,6 +36,12 @@ $(() => {
 		return false;
 	});
 
+	// Center-button shadow
+	$('.center-button').hover(
+		() => $('#shadow').css('box-shadow', '-5px 150px 500px 233px rgba(255,255,255,1)'),
+		() => $('#shadow').css('box-shadow', '-5px 150px 500px 233px rgba(255,255,255,0.8)'),
+	);
+
 	// Contact-form
 	$('#contact-form').on('submit', (e) => {
 		if (!e.isDefaultPrevented()) {
