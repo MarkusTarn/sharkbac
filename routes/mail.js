@@ -4,7 +4,7 @@ const router = Router();
 const config = require('config');
 const { exec } = require('child_process');
 
-router.post('/sdf', [
+router.post('/', [
 	// check('address').isEmail().trim().escape(),
 	// check('subject').trim().escape(),
 ], (req, res, next) => {
