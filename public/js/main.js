@@ -69,8 +69,10 @@ $(() => {
 
 					if (messageAlert && messageText) {
 						$('#contact').find('.messages').html(alertBox);
-						$('#contact-form')[0].reset();
 						location.hash = '#contact';
+						if (data.type === 'success') {
+							$('#contact-form')[0].reset();
+						}
 					}
 				},
 				error: function () {
@@ -80,7 +82,6 @@ $(() => {
 
 					if (messageAlert && messageText) {
 						$('#contact').find('.messages').html(alertBox);
-						$('#contact-form')[0].reset();
 						location.hash = '#contact';
 					}
 				},
