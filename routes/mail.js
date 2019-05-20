@@ -4,7 +4,7 @@ const router = Router();
 const config = require('config');
 const { exec } = require('child_process');
 
-router.post('/', [
+router.post('/sdf', [
 	// check('address').isEmail().trim().escape(),
 	// check('subject').trim().escape(),
 ], (req, res, next) => {
@@ -14,7 +14,7 @@ router.post('/', [
 		if (error !== null) {
 			console.log(`exec error: ${error}`);
 			return res.json({
-				type: 'error',
+				type: 'danger',
 				message: 'Could not send out email, please send email out manually to hannes.tarn@gmail.com',
 			}).send();
 		}

@@ -76,7 +76,7 @@ $(() => {
 					}
 				},
 				error: function () {
-					const messageAlert = 'alert-error';
+					const messageAlert = 'alert-danger';
 					const messageText = 'Could not send out email, please send email out manually to hannes.tarn@gmail.com';
 					const alertBox = `<div class="alert ${messageAlert} alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>${messageText}</div>`;
 
