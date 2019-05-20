@@ -33,6 +33,8 @@ a:active {
 }
 .navbar-header a {
     color: #689f38 !important;
+    letter-spacing: 2px !important;
+    font-weight: 500;
 }
 .navbar-header p {
     letter-spacing: 3px !important;
