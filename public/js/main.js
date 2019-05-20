@@ -23,7 +23,7 @@ $(() => {
 	});
 
 	$('.carousel').carousel({
-		interval: 6000,
+		interval: 10000,
 		pause: 'false',
 	});
 
@@ -41,6 +41,13 @@ $(() => {
 		() => $('#shadow').css('box-shadow', '-5px 150px 500px 233px rgba(255,255,255,1)'),
 		() => $('#shadow').css('box-shadow', '-5px 150px 500px 233px rgba(255,255,255,0.8)'),
 	);
+
+	// initialize Comparisons;
+	setTimeout(() => {
+		$('.twentytwenty-container').twentytwenty({
+			no_overlay: true,
+		});
+	}, 100);
 
 	// Contact-form
 	$('#contact-form').on('submit', (e) => {

@@ -5,9 +5,9 @@
     },
     "email": "markus.tarn@gmail.com",
     "locale": {
-        "locales": ["en", "ru"],
+        "locales": ["en"],
         "cookie": "localeCookie",
-        "path": "locales"
+        "path": "../locales"
     },
     "logger": {
       "level": "info",

@@ -177,6 +177,32 @@ a:active {
     }
 }
 
+/* Services  */
+#services p {
+    padding-bottom: 5px;
+    border-bottom: #689f38 solid 1px;
+}
+
+/* Projets picture comparison */
+* {
+    box-sizing: border-box;
+}
+
+.comp {
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.comp img, .comp-container {
+    margin-bottom: 20px;
+}
+
+.twentytwenty-handle {
+    background-color: #689f38;
+}
+
 /*Contact*/
 @media only screen and (min-width: 992px) {
     #contact {
@@ -224,4 +250,8 @@ a:active {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+body {
+    overflow-x:hidden;
 }
