@@ -16,14 +16,14 @@ router.get('/en', (req, res) => {
 	res.redirect('/');
 });
 
-router.get('/ru', (req, res) => {
-	res.cookie('localeCookie', 'ru');
-	res.redirect('/');
-});
+// router.get('/ru', (req, res) => {
+// 	res.cookie('localeCookie', 'ru');
+// 	res.redirect('/');
+// });
 
-router.get('/de', (req, res) => {
-	res.cookie('localeCookie', 'de');
-	res.redirect('/');
-});
+// router.get('/de', (req, res) => {
+// 	res.cookie('localeCookie', 'de');
+// 	res.redirect('/');
+// });
 
 module.exports = router;

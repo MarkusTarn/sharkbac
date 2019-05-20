@@ -41,18 +41,6 @@
           <li><a class="toscroll" href="#about">${locale.__('menu_about')}</a></li>
           <li><a class="toscroll" href="#projects">${locale.__('menu_projects')}</a></li>
           <li><a class="toscroll" href="#contact">${locale.__('menu_contact')}</a></li>
-          <li class="dropdown">
-            <a href="/en" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-              aria-expanded="false">${locale.__('language')} <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              ${(locale.__('language') === locale.__('menu_language_english')) ? '' : '<li><a href="/en">' +
-                  locale.__('menu_language_english') + '</a></li>'}
-              ${(locale.__('language') === locale.__('menu_language_russian')) ? '' : '<li><a href="/ru">' +
-                  locale.__('menu_language_russian') + '</a></li>'}
-              ${(locale.__('language') === locale.__('menu_language_german')) ? '' : '<li><a href="/de">' +
-                  locale.__('menu_language_german') + '</a></li>'}
-            </ul>
-          </li>
         </ul>
       </div>
     </div>
