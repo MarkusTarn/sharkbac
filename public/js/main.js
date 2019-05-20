@@ -65,7 +65,17 @@ $(() => {
 				success: function (data) {
 					const messageAlert = `alert-${data.type}`;
 					const messageText = data.message;
+					const alertBox = `<div class="alert ${messageAlert} alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>${messageText}</div>`;
 
+					if (messageAlert && messageText) {
+						$('#contact').find('.messages').html(alertBox);
+						$('#contact-form')[0].reset();
+						location.hash = '#contact';
+					}
+				},
+				error: function () {
+					const messageAlert = 'alert-error';
+					const messageText = 'Could not send out email, please send email out manually to hannes.tarn@gmail.com';
 					const alertBox = `<div class="alert ${messageAlert} alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>${messageText}</div>`;
 
 					if (messageAlert && messageText) {
