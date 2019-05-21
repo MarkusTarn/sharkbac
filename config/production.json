@@ -3,7 +3,11 @@
       "host": "http://localhost",
       "port": "5000"
     },
-    "email": "markus.tarn@gmail.com",
+    "email": {
+      "recipient": "markus.tarn@gmail.com",
+      "user": "awsmarkus@gmail.com",
+      "password": "password"
+    },
     "locale": {
         "locales": ["en"],
         "cookie": "localeCookie",
