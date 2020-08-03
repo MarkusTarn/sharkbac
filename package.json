@@ -1,8 +1,8 @@
 {
   "name": "sharkbac",
   "version": "0.8.0",
-  "description": "Mltilingual SharkBac webpage",
-  "main": "app.js",
+  "description": "Multilingual SharkBac webpage",
+  "main": "./start.js",
   "scripts": {
     "start": "node ./start.js",
     "watch": "npm run watch:dev",
