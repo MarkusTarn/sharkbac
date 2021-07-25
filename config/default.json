@@ -9,7 +9,7 @@
       "password": "password"
     },
     "locale": {
-        "locales": ["en"],
+        "locales": ["en", "fi"],
         "cookie": "localeCookie",
         "path": "../locales"
     },

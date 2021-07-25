@@ -1,28 +1,31 @@
 {
-    "service": {
-      "host": "http://localhost",
-      "port": "5000"
+  "service": {
+    "host": "http://localhost",
+    "port": "5000"
+  },
+  "email": {
+    "recipient": "hannes.tarn@gmail.com",
+    "user": "awsmarkus@gmail.com",
+    "password": "password"
+  },
+  "locale": {
+    "locales": [
+      "en",
+      "fi"
+    ],
+    "cookie": "localeCookie",
+    "path": "../locales"
+  },
+  "logger": {
+    "level": "info",
+    "file": {
+      "enabled": true,
+      "level": "error",
+      "path": "logs/service.log"
     },
-    "email": {
-      "recipient": "hannes.tarn@gmail.com",
-      "user": "awsmarkus@gmail.com",
-      "password": "password"
-    },
-    "locale": {
-        "locales": ["en"],
-        "cookie": "localeCookie",
-        "path": "../locales"
-    },
-    "logger": {
-      "level": "info",
-      "file": {
-        "enabled": true,
-        "level": "error",
-        "path": "logs/service.log"
-      },
-      "console": {
-        "enabled": true,
-        "level": "debug"
-      }
+    "console": {
+      "enabled": true,
+      "level": "debug"
     }
   }
+}
